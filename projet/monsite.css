@@ -105,6 +105,11 @@ body {
 
 /* Body */
 
+	#map{
+            height:600px; 
+            width:80%; 
+        }
+        
 	#main {
 		min-height: 100%;
 		position: relative;
