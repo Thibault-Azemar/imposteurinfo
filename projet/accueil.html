@@ -1,51 +1,40 @@
 <!DOCTYPE html>
 <html>
-	
+
 	<head>
 	    <meta charset="utf-8" />
 	    <link rel="stylesheet" href="monsite.css" />
 	    <title>Accueil</title>
-	    <link rel="icon" href="images/icon.ico" />
-
-	    <meta name="viewport" content="width=device-width,initial-scale-1.0">
-    	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    	 
-    	<style>
-        #map{
-            height:600px; 
-            width:80%; 
-        }
-    	</style> 
+	    <link rel="icon" href="Images/icon.ico" />
 	 </head>
 
 	<body>
 
 		<div id="main">
 
-			<div id="retour"><a href="#main"><img src="images/vent.png" title= "Psst! To the top"></a></div>
+			<div id="retour"><a href="#main"><img src="Images/vent.png" title= "Psst! To the top"></a></div>
 
 			<header>
 
-				<img id="animation" src="images/logo.png">
+				<img id="animation" src="Images/logo.png">
 				
-				<img src="images/mer.png">
+				<img src="Images/mer.png">
 
 				<div id="menu">
 					<ul>
 						<li><a href="accueil.html">ACCUEIL</a></li>
 						<li class="menude">LISTE DES SPOTS
 							<div class="sousmenu">
-								<a href="Pages/spot_cap_ferret">Le Cap Ferret</a>
-								<a href="Pages/spot_hossegor">Hossegor</a>
-								<a href="Pages/spot_marseille">Marseille</a>
-								<a href="Pages/spot_langrune_sur_mer">Langrune sur Mer</a>
-								<a href="Pages/spot_perros_guirec">Perros-Guirec</a>
-								<a href="Pages/spot_cote_des_basques">La Côte des Basques</a>
-								<a href="Pages/spot_oleron">Oléron</a>
-								<a href="Pages/spot_torche">La Torche</a>
-								<a href="Pages/spot_palavas_les_flots">Palavas-les-Flots</a>
-								<a href="Pages/spot_collignon">Collignon</a>
+								<a href="Pages/spot_cap_ferret.html">Le Cap Ferret</a>
+								<a href="Pages/spot_hossegor.html">Hossegor</a>
+								<a href="Pages/spot_marseille.html">Marseille</a>
+								<a href="Pages/spot_langrune_sur_mer.html">Langrune sur Mer</a>
+								<a href="Pages/spot_perros_guirec.html">Perros-Guirec</a>
+								<a href="Pages/spot_cote_des_basques.html">La Côte des Basques</a>
+								<a href="Pages/spot_oleron.html">Oléron</a>
+								<a href="Pages/spot_torche.html">La Torche</a>
+								<a href="Pages/spot_palavas_les_flots.html">Palavas-les-Flots</a>
+								<a href="Pages/spot_collignon.html">Collignon</a>
 							</div>
 						</li>						
 						<li><a href="Pages/a_propos.html">A PROPOS</a></li>
@@ -59,91 +48,8 @@
 
 			<div id="content">
 				<h1>Accueil</h1>
-				<div id="map"></div>
-     			<script>
 
-         		function initMap() {
-             		var options = {
-                 	zoom: 6,
-                 	center: { lat: 46.972169, lng: 2.548908 }
-             		}
-             		var coordonées;
-             		var map = new google.maps.Map(document.getElementById('map'), options);
-
-
-             	addMarker({
-                 coords: {lat: 44.654870,lng: -1.251663},
-                 //IconImage : 
-                 content :'<a href ="Pages/spot_cap_ferret.html"> Cap Ferret </a>'
-             	})
-             	addMarker({
-                 coords: { lat: 49.656829, lng: -1.567550 },
-                 //IconImage : 
-                 content: '<a href ="Pages/spot_collignon.html"> Collignon </a>'
-             	})
-             	addMarker({
-                 coords: { lat: 43.671457, lng:-1.441804 },
-                 //IconImage : 
-                 content: '<a href ="Pages/spot_hossegor.html"> Hossegor </a>'
-             	})
-             	addMarker({
-                 coords: { lat: 43.474303, lng: -1.568971 },
-                 //IconImage : 
-                 content: '<a href ="Pages/spot_la_cote_des_basques.html"> La Cote Des Basques </a>'
-             	})
-             	addMarker({
-                 coords: { lat: 47.846734, lng: -4.347388 },
-                 //IconImage : 
-                 content: '<a href ="Pages/spot_la_torche.html"> La Torche </a>'
-             	})
-             	addMarker({
-                 coords: { lat: 49.329026, lng: -0.379136 },
-                 //IconImage : 
-                 content: '<a href ="Pages/spot_langrune_sur_mer.html"> Langrune Sur Mer </a>'
-             	})
-             	addMarker({
-                 coords: { lat: 43.262530, lng: 5.371268 },
-                 //IconImage : 
-                 content: '<a href ="Pages/spot_marseille.html"> Marseille </a>'
-             	})
-             	addMarker({
-                 coords: { lat: 45.996232, lng: -1.387388 },
-                 //IconImage : 
-                 content: '<a href ="Pages/spot_oleron.html"> Oleron </a>'
-             	})
-             	addMarker({
-                 coords: { lat: 43.996232, lng: 3.943723 },
-                 //IconImage : 
-                 content: '<a href ="Pages/spot_palavas_les_flots.html"> Palavas Les Flots </a>'
-             	})
-             	addMarker({
-                 coords: { lat: 48.816738, lng: -3.455864 },
-                 //IconImage : 
-                 content: '<a href ="Pages/spot_perros_guirec.html"> Perros Guirec </a>'
-             	})
-               function addMarker(props) {
-                 var marker = new google.maps.Marker({
-                     position: props.coords,
-                     map: map,
-                     icon: props.IconImage,
-
-                 })
-                     var infoWindow = new google.maps.InfoWindow({
-                         content: props.content
-                     });
-                     marker.addListener('click', function(){
-
-                         infoWindow.open(map, marker);
-                     });
-                 }
-             }
-        		</script>
-     			<script async defer
-             	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUztqWXmXY0mCZw5vl0fogRSrviRmU-5Y&callback=initMap" >
-     			</script>
-
-
-				</div>
+				Map + descri à mettre ici
 			 </div>
 
 			<footer>
