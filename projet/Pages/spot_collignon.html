@@ -1,90 +1,142 @@
 <!DOCTYPE html>
-<html lang = "fr">
-	<head>
-		<meta charset = "utf-8"/>
-		<link rel="stylesheet" href="../monsite.css"/>
-		<title>Collignon</title>
-		<!-- titre  -->
-		<link rel="icon" href="icone"/>
+<html>
 
-	</head>
+	<head>
+	    <meta charset="utf-8" />
+	    <link rel="stylesheet" href="../monsite.css" />
+	    <title>Collignon</title>
+	    <link rel="icon" href="../Images/icon.ico" />
+	 </head>
+
 	<body>
-		
+
 		<div id="main">
+
+			<div id="retour"><a href="#main"><img src="../Images/vent.png" title= "Psst! To the top"></a></div>
+
+			<header>
+
+				<img id="animation" src="../Images/logo.png">
+				
+				<img src="../Images/mer.png">
+
+				<div id="menu">
+					<ul>
+						<li><a href="../accueil.html">ACCUEIL</a></li>
+						<li class="menude">LISTE DES SPOTS
+							<div class="sousmenu">
+								<a href="spot_cap_ferret.html">Le Cap Ferret</a>
+								<a href="spot_hossegor.html">Hossegor</a>
+								<a href="spot_marseille.html">Marseille</a>
+								<a href="spot_langrune_sur_mer.html">Langrune sur Mer</a>
+								<a href="spot_perros_guirec.html">Perros-Guirec</a>
+								<a href="spot_cote_des_basques.html">La Côte des Basques</a>
+								<a href="spot_oleron.html">Oléron</a>
+								<a href="spot_torche.html">La Torche</a>
+								<a href="spot_palavas_les_flots.html">Palavas-les-Flots</a>
+								<a href="spot_collignon.html">Collignon</a>
+							</div>
+						</li>						
+						<li><a href="a_propos.html">A PROPOS</a></li>
+						<li><a href="partenaires.html">NOS PARTENAIRES</a></li>
+						<li><a href="mailto:La dernière fois que j'ai vu Rouge, il était chez les partenaires, tu peux aller vérifier s'il va bien?">CONTACT</a></li>
+					 </ul>	
+				 </div>
+
+
+			 </header>
+
 			<div id="content">
+
+				<h1>Collignon:</h1>
 				<div id="descspot">
-					<img class=cssimggauche alt="photo de la plage de Collignon" src="../Images/spot_collignon.jpg"/>
-					<pr>Collignon : <br/>
+					<img class="cssimggauche" alt="photo de la plage de Collignon" src="../Images/spot_collignon.jpg"/>
+					<p>
 					La plage de Collignon, au nord-est de Tourlaville (Manche), est idéale pour s’initier au surf. Le plan d’eau est calme grâce à la digue, 
-					ce qui permet de se frotter à des vagues de faible taille. Ce spot ne manque pas d’attirer les résidents débutants de Cherbourg. </pr>
-			</div>
-			
-				<a href="https://goo.gl/maps/cPvE2qFQ9y8aXifS6" target="_blank">Cliquer sur ce lien pour retrouver la localisation de Collignon !</a><br/>
-			
+					ce qui permet de se frotter à des vagues de faible taille. Ce spot ne manque pas d’attirer les résidents débutants de Cherbourg. </p>
+				</div>
+				
+				<a href="https://goo.gl/maps/cPvE2qFQ9y8aXifS6" target="_blank">Cliquez sur ce lien pour retrouver la localisation de Collignon !</a><br/>
+				
 				<div id="avisform">
 					<span id="avisbouton">
 						<br/>
-						Donner un avis <br/><br/>
+						<h2>Donner un avis</h2> <br/><br/>
 							<div id="donnerunavis">
 								<fieldset>
 									<legend>Q1. Avez-vous trouvé des déchets sur la plage ?</legend>
-									<input type="radio" name="quest1" value="1">Oui<br/>
-									<input type="radio" name="quest1" value="2">Non<br/>
+									<div class="reponses">
+										<input type="radio" name="quest1" value="1"> Oui<br/>
+										<input type="radio" name="quest1" value="2"> Non<br/>
+									</div>
 								</fieldset>
-								<br/>
-									Si oui :
+								<br/><br/>
+									<span id="if">Si oui :</span>
 								<br/>
 								<fieldset>
-									<legend>Q2. Quels types de polution avez-vous retrouvé sur le lieu ?</legend>
-									<input type="checkbox" name="quest2" value="1"><label for="plastique">Plastique</label><br/>
-									<input type="checkbox" name="quest2" value="2"><label for="algues">Algues vertes</label><br/>
-									<input type="checkbox" name="quest2" value="3"><label for="verres">Objets en verre</label><br/>
-									<input type="checkbox" name="quest2" value="4"><label for="metal">Objets en métals</label><br/>
-									<input type="checkbox" name="quest2" value="5"><label for="tissu">Objets en tissus</label><br/>
-									<input type="checkbox" name="quest2" value="6"><label for="megot">Mégots de cigarettes</label><br/>
-									<input type="checkbox" name="quest2" value="7"><label for="autres">Autres :<br/><input type="text" name="quest3" size="40"></label>
-								</fieldset>
-								<br/>
-								<fieldset>
-									<legend>Q3. Comment avez-vous trouvé la qualitée de l'eau ?</legend>
-									<label for="quest3">Mauvaise qualitée</label>
-									<input type="range" min="0" max="5" value="0" step="1" onchange="quest3.value=this.value;">Bonne qualitée
-									<output name = "quest3" value="5">
-								</fieldset>
-								<br/>
-								<fieldset> 
-									<legend> Pourcentage de personnes qui ont aimé ce spot </legend> 
-									<div id="boite">
-										<div id="number"> 0 </div>
-										<button id="like"> like </button>
-										<button id="dislike"> dislike </button>
+									<legend>Q2. Quels types de pollution avez-vous retrouvé sur le lieu ?</legend>
+									<div class="reponses">
+										<input type="checkbox" name="quest2" value="1"><label for="plastique"> Plastique</label><br/>
+										<input type="checkbox" name="quest2" value="2"><label for="algues"> Algues vertes</label><br/>
+										<input type="checkbox" name="quest2" value="3"><label for="verres"> Objets en verre</label><br/>
+										<input type="checkbox" name="quest2" value="4"><label for="metal"> Objets en métal</label><br/>
+										<input type="checkbox" name="quest2" value="5"><label for="tissu"> Objets en tissu</label><br/>
+										<input type="checkbox" name="quest2" value="6"><label for="megot"> Mégots de cigarettes</label><br/>
+										<input type="checkbox" name="quest2" value="7"><label for="autres"> Autre : <input type="text" name="quest3" size="70"></label>
 									</div>
 								</fieldset>
 								<br/>
+								<fieldset>
+									<legend>Q3. Comment avez-vous trouvé la qualité de l'eau ?</legend>
+									<div class="reponses">
+										<label for="quest3"> Mauvaise qualité </label>
+										<input type="range" min="0" max="5" value="0" step="1" onchange="quest3.value=this.value;"> Bonne qualité 
+										<output name = "quest3" value="5"></output>
+									</div>
+								</fieldset>
+								<br/>
+									<legend> Pourcentage de personnes qui ont aimé ce spot </legend> 
+	    							<div id="boite">
+	        							<div id="number"> 0 </div>
+	        							<button id="like"> Like </button>
+	        							<button id="dislike"> Dislike </button>
+	        						</div>
+	    						<br/>
 
-								<script src="boitalikes/likes.js">
+	    						<script src="boitalikes/likes.js">
 
-								</script>
+	    						</script>
 							</div>
-						
+							
 							<div id="donnerunavis">
-								Rédiger un avis :
+								Rédiger un commentaire :
 								<input type="text" id="redigeravis">
-								
+									
 							</div>
+							</br></br>
+							<div class="button">
+        						<button type="submit">Envoyer cet avis</button>
+    						</div>
 					</span>
 					<br/>
 					<span id="avisbouton">
 						Consulter les avis
 							<div id="consulterlesavis">
-							
+								
 							</div>
 					</span>
-				</div>
-			</div>
-			
-		</div>
-	</body>
+				 </div>
+				
+			 </div>
+
+			<footer>
+				<p>&copy; 2020 - Les Imposteurs</p>
+			</footer>
+		
+		 </div>
+	
+	 </body>
+
+ </html>
 
 
-</html>

@@ -2,23 +2,13 @@
 <html lang = "fr">
 	<head>
 		<meta charset = "utf-8"/>
-		<link rel="stylesheet" href="monsite.css"/>
-		<title>Acceuil</title>
+		<link rel="stylesheet" href=".css"/>
+		<title> Titre</title>
 		<!-- titre  -->
 		<link rel="icon" href="icone"/>
-		<meta name="viewport" content="width=device-width,initial-scale-1.0">
-    	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    	 
-    	<style>
-        #map{
-            height:600px; 
-            width:80%; 
-        }
-    	</style> 
 	</head>
 	<body>
-
 
 		<div id="main">
 
@@ -30,41 +20,46 @@
 			</header>
 
 			<div id="content">
-				<div id="map"></div>
-     			<script>
+			<!-- création de division sur l'écran qui pourront être gérée et positionnée par aurane -->
 
-         		function initMap() {
-             	var options = {
-                 zoom: 8,
-                 center: { lat: 42.6314, lng: -71.05 }
-             	}
-             	var coordonées;
-             	var map = new google.maps.Map(document.getElementById('map'), options);
-             	//Add marker 
-             	var marker = new google.maps.Marker({
-                 position: { lat: 42, lng: -70 },
-                 map: map,
-                 //icon : 
-             	});
-             	var infoWindow = new google.maps.InfoWindow({
-                 content:'<h1>Lynn</h1>'
-             	});
-             	marker.addListener('click',function(){
-                 infoWindow.open(map, marker); 
+				<img class=gestioncss alt="breve description image" src="photo.jpg"/>
+				<!-- ajout de l'image photo.jpg-->
 
-             	});
-         		};
-        		</script>
-     			<script async defer
-             	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUztqWXmXY0mCZw5vl0fogRSrviRmU-5Y&callback=initMap%22%3E">
-    			</script>
+				<br>
+				<!-- saut de ligne dans la division -->
+
+				<span id="souligné"> bonjour </span>
+				<!-- permet de faire ressortir un morceau du texte avec une id = précision de comment il doit ressortir pour Aurane -->
+
+				<h1> TITRE TRES IMPORTANT </h1>
+				<h2> Titre un peu moins important </h2>
+				<h6> ouais ca va jusquà 6 </h6> 
+				<!-- gestion des titres très importante pour le css -->
+
+				<a href="https://deviuehvi" target="_blank"> lien clicable qui ouvre dans un nouvel onglet</a>
+
+				<a href ="image.jpg"><<img class=gestioncss alt="breve description image" src="photo.jpg" title="cliquer ici ... "/></a>
+				<!-- ajout de l'image photo.jpg clicable-->
+
+				<audio controls src="musique.mp3"></audio>
+				<!-- ajout d'un audio genre bruit de la mer -->
+
+				<ul>
+					<li>premier élément</li>
+					<li>deuxième élément</li>
+					<li>troisème élément</li>
+				</ul>
+				<!-- création de liste si tu comprends pas t'es con :P -->
+				<!-- <ul> liste à puce -->
+				<!-- <ol> liste numérotée -->
 
 
-				</div>
 			</div>
 
 			<footer>
-				
+				<p> Ecrivez nous pour partager vos expériences <a href "mailto: "> ici </a>
+				<br>
+				&copy; 2020 - Les Imposteurs</p>
 			</footer>
 
 		</div>

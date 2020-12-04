@@ -8,6 +8,10 @@
 	src: url('typo/Champagne.ttf');
  }
 
+@font-face {
+	font-family: 'Vogue';
+	src: url('typo/Vogue.ttf');
+}
 
 * {
  margin:0;
@@ -118,9 +122,19 @@ body {
 	}
 
 	h1 {
-		font-family: Bebas;
-		font-size: 80px;
+		font-family: Vogue;
+		font-size: 60px;
+		font-weight: lighter;
 		padding: 50px;
+		color: #393d3e;
+	}
+
+	h2 {
+		font-family: Vogue;
+		font-size: 30px;
+		font-weight: lighter;
+		padding-top: 60px;
+		color: #393d3e;
 	}
 
 	#content a{
@@ -132,31 +146,51 @@ body {
 		text-align: justify;
 	}
 
-	.photopp{
-		height: 250px;
-		margin: 20px;
-	}
+	/* Spot */
 
-	.photopp:hover{
-		height: 300px;
-		transition: 0.5s;
-	}
+		img.cssimggauche{
+			width: 500px;
+			border-radius: 50px;
+			margin-bottom: 50px;
+		}
 
-	#tableau{
-		width: 1000px;
-		height: 300px;
-		margin: auto;
-	}
+		.reponses {
+			margin: 30px;
+			text-align: left;
+		}
 
-	#content ul{
-		text-align: justify;
-	}
+		span#if {
+			font-size: 28px;
+			font-weight: bold;
+			text-decoration: underline;
+		}
 
-	#tableau2{
-		width: 500px;
-		height: 100px;
-		margin: auto;
-	}
+		button {
+			background-color: #6ec2d4;
+			border: none;
+			color: white;
+			padding: 10px 20px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+			border-radius: 40px;
+			}
+
+		#boite {
+			width: 30%;
+			border: solid 1px #a0a0a0;
+			border-radius: 20px;
+			margin: 30px auto;
+			padding: 20px;
+		}
+
+		#number {
+			margin: 10px;
+			font-size: 40px;
+		}
 
 /* Footer */
 
@@ -179,4 +213,4 @@ body {
 	 footer a{
 	 	color: #4c6168;
 	 	text-decoration: none;
-	 }
+	 }-
