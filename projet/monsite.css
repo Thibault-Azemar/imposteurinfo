@@ -29,6 +29,8 @@ body {
 	background-size: 100%;
  }
 
+#animation{
+	margin: auto;}
 
 /* Header */
 
@@ -92,14 +94,6 @@ body {
 
 	.menude:hover .sousmenu{
 	 	display: block;
-	}
-
-	#animation{
-		position: absolute;
-		left: 46%;
-		margin: 0px auto;
-		width: 180px;
-		top: 6%;
 	}
  }
 
@@ -201,9 +195,24 @@ body {
 			width: 40%;
 		}
 
+		#fin{
+			width: 400px;
+			margin: 10px;
+		}
+
+		#ohno img{
+			opacity: 30%;
+			width: 90px;
+			position: absolute;
+			bottom: 305px;
+			right: 7%;
+		}
+
+
 /* Footer */
 
 	footer {
+		z-index: 3;
 		background: #b3ced9;
 		margin-top: 150px;
 		margin-bottom: 0px;
