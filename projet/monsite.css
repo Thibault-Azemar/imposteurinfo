@@ -14,7 +14,7 @@
 }
 
 * {
- margin:0;
+ margin: 0 auto;
  padding:0;
  }
 
@@ -195,6 +195,10 @@ body {
 		#number {
 			margin: 10px;
 			font-size: 40px;
+		}
+
+		img#emergency{
+			width: 40%;
 		}
 
 /* Footer */
