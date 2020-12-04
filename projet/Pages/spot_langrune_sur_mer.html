@@ -11,76 +11,77 @@
 	<body>
 		
 		<div id="main">
-			<div id="descspot">
-				<img class=cssimggauche alt="photo du spot nom" src="../Images/spot_langrune_sur_mer.jpg"/>
-				<pr>Langrune-sur-Mer : <br/>
-				La plage de Langrune-sur-Mer, au nord de Caen (Calvados), est l’un des meilleurs spots de surf en Normandie. Par vent de nord-est et à marée descendante, les vagues se lèvent au large pour votre grand plaisir. Le site est peu connu et pourtant, on a toujours pied même à 500 mètres du rivage.  </pr>
-		</div>
-			
-			<a href="https://goo.gl/maps/GbhvSDLe6mPQ58sX6" target="_blank">position du spot dans google map</a><br/>
-			
-			<div id="avisform">
-				<span id="avisbouton">
-					<br/>
-					Donner un avis <br/><br/>
-						<div id="donnerunavis">
-							<fieldset>
-								<legend>Q1. Avez-vous trouvé des déchets sur la plage ?</legend>
-								<input type="radio" name="quest1" value="1">Oui<br/>
-								<input type="radio" name="quest1" value="2">Non<br/>
-							</fieldset>
-							<br/>
-								Si oui :
-							<br/>
-							<fieldset>
-								<legend>Q2. Quels types de polution avez-vous retrouvé sur le lieu ?</legend>
-								<input type="checkbox" name="quest2" value="1"><label for="plastique">Plastique</label><br/>
-								<input type="checkbox" name="quest2" value="2"><label for="algues">Algues vertes</label><br/>
-								<input type="checkbox" name="quest2" value="3"><label for="verres">Objets en verre</label><br/>
-								<input type="checkbox" name="quest2" value="4"><label for="metal">Objets en métals</label><br/>
-								<input type="checkbox" name="quest2" value="5"><label for="tissu">Objets en tissus</label><br/>
-								<input type="checkbox" name="quest2" value="6"><label for="megot">Mégots de cigarettes</label><br/>
-								<input type="checkbox" name="quest2" value="7"><label for="autres">Autres :<br/><input type="text" name="quest3" size="40"></label>
-							</fieldset>
-							<br/>
-							<fieldset>
-								<legend>Q3. Comment avez-vous trouvé la qualitée de l'eau ?</legend>
-								<label for="quest3">Mauvaise qualitée</label>
-								<input type="range" min="0" max="5" value="0" step="1" onchange="quest3.value=this.value;">Bonne qualitée
-								<output name = "quest3" value="5">
-							</fieldset>
-							<br/>
-							<fieldset> 
-								<legend> Pourcentage de personnes qui ont aimé ce spot </legend> 
-    							<div id="boite">
-        							<div id="number"> 0 </div>
-        							<button id="like"> like </button>
-        							<button id="dislike"> dislike </button>
-        						</div>
-    						</fieldset>
-    						<br/>
-
-    						<script src="boitalikes/likes.js">
-
-    						</script>
-						</div>
-						
-						<div id="donnerunavis">
-							Rédiger un avis :
-							<input type="text" id="redigeravis">
-								
-						</div>
-				</span>
-				<br/>
-				<span id="avisbouton">
-					Consulter les avis
-						<div id="consulterlesavis">
-							
-						</div>
-				</span>
+			<div id="content">
+				<div id="descspot">
+					<img class=cssimggauche alt="photo du spot nom" src="../Images/spot_langrune_sur_mer.jpg"/>
+					<pr>Langrune-sur-Mer : <br/>
+					La plage de Langrune-sur-Mer, au nord de Caen (Calvados), est l’un des meilleurs spots de surf en Normandie. Par vent de nord-est et à marée descendante, les vagues se lèvent au large pour votre grand plaisir. Le site est peu connu et pourtant, on a toujours pied même à 500 mètres du rivage.  </pr>
 			</div>
 				
-			
+				<a href="https://goo.gl/maps/GbhvSDLe6mPQ58sX6" target="_blank">position du spot dans google map</a><br/>
+				
+				<div id="avisform">
+					<span id="avisbouton">
+						<br/>
+						Donner un avis <br/><br/>
+							<div id="donnerunavis">
+								<fieldset>
+									<legend>Q1. Avez-vous trouvé des déchets sur la plage ?</legend>
+									<input type="radio" name="quest1" value="1">Oui<br/>
+									<input type="radio" name="quest1" value="2">Non<br/>
+								</fieldset>
+								<br/>
+									Si oui :
+								<br/>
+								<fieldset>
+									<legend>Q2. Quels types de polution avez-vous retrouvé sur le lieu ?</legend>
+									<input type="checkbox" name="quest2" value="1"><label for="plastique">Plastique</label><br/>
+									<input type="checkbox" name="quest2" value="2"><label for="algues">Algues vertes</label><br/>
+									<input type="checkbox" name="quest2" value="3"><label for="verres">Objets en verre</label><br/>
+									<input type="checkbox" name="quest2" value="4"><label for="metal">Objets en métals</label><br/>
+									<input type="checkbox" name="quest2" value="5"><label for="tissu">Objets en tissus</label><br/>
+									<input type="checkbox" name="quest2" value="6"><label for="megot">Mégots de cigarettes</label><br/>
+									<input type="checkbox" name="quest2" value="7"><label for="autres">Autres :<br/><input type="text" name="quest3" size="40"></label>
+								</fieldset>
+								<br/>
+								<fieldset>
+									<legend>Q3. Comment avez-vous trouvé la qualitée de l'eau ?</legend>
+									<label for="quest3">Mauvaise qualitée</label>
+									<input type="range" min="0" max="5" value="0" step="1" onchange="quest3.value=this.value;">Bonne qualitée
+									<output name = "quest3" value="5">
+								</fieldset>
+								<br/>
+								<fieldset> 
+									<legend> Pourcentage de personnes qui ont aimé ce spot </legend> 
+									<div id="boite">
+										<div id="number"> 0 </div>
+										<button id="like"> like </button>
+										<button id="dislike"> dislike </button>
+									</div>
+								</fieldset>
+								<br/>
+
+								<script src="boitalikes/likes.js">
+
+								</script>
+							</div>
+							
+							<div id="donnerunavis">
+								Rédiger un avis :
+								<input type="text" id="redigeravis">
+									
+							</div>
+					</span>
+					<br/>
+					<span id="avisbouton">
+						Consulter les avis
+							<div id="consulterlesavis">
+								
+							</div>
+					</span>
+				</div>
+			</div>
+				
 		</div>
 	</body>
 
