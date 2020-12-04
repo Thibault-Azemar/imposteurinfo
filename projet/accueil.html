@@ -90,7 +90,7 @@
              	addMarker({
                  coords: { lat: 43.474303, lng: -1.568971 },
                  IconImage : "Images/jaune.png", 
-                 content: '<a href ="Pages/spot_la_cote_des_basques.html"> La Cote Des Basques </a>'
+                 content: '<a href ="Pages/spot_cote_des_basques.html"> La Cote Des Basques </a>'
              	})
              	addMarker({
                  coords: { lat: 47.846734, lng: -4.347388 },
@@ -122,6 +122,11 @@
                  IconImage : "Images/violet.png", 
                  content: '<a href ="Pages/spot_perros_guirec.html"> Perros Guirec </a>'
              	})
+                addMarker({
+                 coords: { lat: 20.9, lng: -156.2 },
+                 IconImage : "Images/rosemort.png",
+                 content: 'Oh no, Rose id dead! We need an emergency meeting, clic on the page contact to win a hint!'
+                })
                function addMarker(props) {
                  var marker = new google.maps.Marker({
                      position: props.coords,
