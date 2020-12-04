@@ -13,22 +13,25 @@
 		<div id="main">
 			<div id="descspot">
 				<img class=cssimggauche alt="photo du spot nom" src="dossiers/images/spot1.jpg"/>
-				
-				Descriptif du spot.
-			</div>
+				<pr>Nom du spot : <br/>
+				Descriptif du spot.</pr>
+		</div>
 			
-			<a href="https://deviuehvi" target="_blank">position du spot dans google map</a>
+			<a href="https://deviuehvi" target="_blank">position du spot dans google map</a><br/>
 			
 			<div id="avisform">
 				<span id="avisbouton">
-					Donner un avis
+					<br/>
+					Donner un avis <br/><br/>
 						<div id="donnerunavis">
 							<fieldset>
 								<legend>Q1. Avez-vous trouvé des déchets sur la plage ?</legend>
 								<input type="radio" name="quest1" value="1">Oui<br/>
-								<input type="radio" name="quest1" value="2">Non
+								<input type="radio" name="quest1" value="2">Non<br/>
 							</fieldset>
-								Si oui :<br/>
+							<br/>
+								Si oui :
+							<br/>
 							<fieldset>
 								<legend>Q2. Quels types de polution avez-vous retrouvé sur le lieu ?</legend>
 								<input type="checkbox" name="quest2" value="1"><label for="plastique">Plastique</label><br/>
@@ -39,12 +42,14 @@
 								<input type="checkbox" name="quest2" value="6"><label for="megot">Mégots de cigarettes</label><br/>
 								<input type="checkbox" name="quest2" value="7"><label for="autres">Autres :<br/><input type="text" name="quest3" size="40"></label>
 							</fieldset>
+							<br/>
 							<fieldset>
 								<legend>Q3. Comment avez-vous trouvé la qualitée de l'eau ?</legend>
 								<label for="quest3">Mauvaise qualitée</label>
 								<input type="range" min="0" max="5" value="0" step="1" onchange="quest3.value=this.value;">Bonne qualitée
 								<output name = "quest3" value="5">
 							</fieldset>
+							<br/>
 						</div>
 						
 						<div id="donnerunavis">
@@ -53,6 +58,7 @@
 								
 						</div>
 				</span>
+				<br/>
 				<span id="avisbouton">
 					Consulter les avis
 						<div id="consulterlesavis">
