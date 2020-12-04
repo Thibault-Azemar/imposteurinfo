@@ -10,13 +10,13 @@ let integer = 0;
 
 liker.addEventListener('click', function(){
     comptlike += 1;
-    integer = (comptlike/(comptlike+comptdislike))*100
+    integer = ((comptlike/(comptlike+comptdislike))*100).toFixed(2);
     int.innerHTML = integer;
 })
 
 
 disliker.addEventListener('click', function(){
     comptdislike += 1;
-    integer = (comptlike/(comptlike+comptdislike))*100
+    integer = ((comptlike/(comptlike+comptdislike))*100).toFixed(2);
     int.innerHTML = integer;
 })
